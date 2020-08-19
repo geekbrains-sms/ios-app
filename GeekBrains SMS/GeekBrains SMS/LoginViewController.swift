@@ -33,11 +33,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "registration" {return true}
         let login = loginInput.text!
         let password = passwordInput.text!
+        let session = Session.instance
         
-        if login == "login" && password == "password" {
-            return true
+        if session.loginData.keys.contains(login) {
+            if session.loginData[login] == password {
+                return true } else {return false}
         } else {
             let alert = UIAlertController(title: "Ошибка", message: "Учётная запись не найдена", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
