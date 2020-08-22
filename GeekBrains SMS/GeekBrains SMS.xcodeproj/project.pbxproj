@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		750BB36A24EC1BBF0088E21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */; };
 		75C4852A24ED730E00A3B8FE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852924ED730E00A3B8FE /* Session.swift */; };
 		75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852B24ED759400A3B8FE /* RegisterViewController.swift */; };
+		75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAE80924F1926A00237610 /* MainViewController.swift */; };
 		7E1905A66715E38B71F9E679 /* Pods_GeekBrains_SMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		750BB36B24EC1BBF0088E21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75C4852924ED730E00A3B8FE /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		75C4852B24ED759400A3B8FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		75DAE80924F1926A00237610 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7AE1EDC253B2FD27EA419E92 /* Pods-GeekBrains SMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekBrains SMS.release.xcconfig"; path = "Target Support Files/Pods-GeekBrains SMS/Pods-GeekBrains SMS.release.xcconfig"; sourceTree = "<group>"; };
 		A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekBrains_SMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 		750BB35C24EC1BB00088E21C /* GeekBrains SMS */ = {
 			isa = PBXGroup;
 			children = (
+				75DAE80924F1926A00237610 /* MainViewController.swift */,
 				75C4852B24ED759400A3B8FE /* RegisterViewController.swift */,
 				75C4852924ED730E00A3B8FE /* Session.swift */,
 				750BB35D24EC1BB00088E21C /* AppDelegate.swift */,
@@ -86,7 +89,6 @@
 				4E4EA20715D512BB3F724EE8 /* Pods-GeekBrains SMS.debug.xcconfig */,
 				7AE1EDC253B2FD27EA419E92 /* Pods-GeekBrains SMS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,6 +218,7 @@
 				75C4852A24ED730E00A3B8FE /* Session.swift in Sources */,
 				75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */,
 				750BB36224EC1BB00088E21C /* LoginViewController.swift in Sources */,
+				75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */,
 				750BB35E24EC1BB00088E21C /* AppDelegate.swift in Sources */,
 				750BB36024EC1BB00088E21C /* SceneDelegate.swift in Sources */,
 			);

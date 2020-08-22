@@ -16,4 +16,5 @@ class Session {
     private init(){}
     
     var loginData = ["login":"password"]
+    var login = ""
 }

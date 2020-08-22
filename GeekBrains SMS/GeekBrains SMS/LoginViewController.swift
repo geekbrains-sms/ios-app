@@ -40,6 +40,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         if session.loginData.keys.contains(login) {
             if session.loginData[login] == password {
+                session.login = login
                 return true } else {return false}
         } else {
             let alert = UIAlertController(title: "Пользователь с такими логином и паролем не найден", message: "Возможно, пользователя не существует или пользовательские данные введены некорректно", preferredStyle: .alert)
