@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if session.loginData[login] == password {
                 return true } else {return false}
         } else {
-            let alert = UIAlertController(title: "Ошибка", message: "Учётная запись не найдена", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Пользователь с такими логином и паролем не найден", message: "Возможно, пользователя не существует или пользовательские данные введены некорректно", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
