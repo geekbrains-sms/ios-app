@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="136.25"/>
         </scene>
-        <!--Register View Controller-->
+        <!--View Controller-->
         <scene sceneID="QgM-X2-jRd">
             <objects>
-                <viewController id="ed0-0m-LwF" customClass="RegisterViewController" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ed0-0m-LwF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBv-xf-Tov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,11 +192,6 @@
                         <viewLayoutGuide key="safeArea" id="vak-Xo-IFl"/>
                     </view>
                     <navigationItem key="navigationItem" id="grP-QA-zti"/>
-                    <connections>
-                        <outlet property="loginInput" destination="CNg-iO-DCr" id="UhC-Io-Avm"/>
-                        <outlet property="passwordInput" destination="nhC-ju-l1v" id="O8M-cU-dBi"/>
-                        <outlet property="passwordRepeatInput" destination="86T-04-jXO" id="hcU-te-ULt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYA-HC-3cO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -496,7 +491,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdU-TQ-sOM">
                                 <rect key="frame" x="16" y="427" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="join" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-l0-S4R">
                                 <rect key="frame" x="16" y="399" width="64" height="20"/>
@@ -565,6 +560,9 @@
                                 <rect key="frame" x="152.5" y="469" width="70" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Создать"/>
+                                <connections>
+                                    <segue destination="KXk-UW-yxK" kind="presentation" identifier="UserCreated" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="5dt-PQ-PRN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -623,6 +621,14 @@
                     <navigationItem key="navigationItem" title="Новый пользователь" id="TY0-Zp-38x">
                         <barButtonItem key="backBarButtonItem" title=" " id="aBk-bS-LSU"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailInput" destination="gmf-nO-6th" id="jIf-sL-gaE"/>
+                        <outlet property="loginInput" destination="rMA-kU-Ji7" id="JnV-hm-CdS"/>
+                        <outlet property="nameInput" destination="AwQ-5p-2jC" id="tpy-LB-owU"/>
+                        <outlet property="passwordInput" destination="WdU-TQ-sOM" id="9a9-tF-mZn"/>
+                        <outlet property="phoneInput" destination="knZ-eK-0nQ" id="MJW-jK-Izq"/>
+                        <outlet property="roleInput" destination="Nbo-mM-h8r" id="I0O-sJ-FP0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPs-Mh-OfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -630,7 +636,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="m5K-3G-iHl"/>
+        <segue reference="5dt-PQ-PRN"/>
+        <segue reference="LP9-1O-ukg"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cube.box.fill" catalog="system" width="128" height="124"/>

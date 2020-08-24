@@ -17,4 +17,8 @@ class Session {
     
     var loginData = ["login":"password"]
     var login = ""
+    var nameData = ["login":"Тестов Тест Тестович"]
+    var emailData = ["login":"12w8w21@gmail.com"]
+    var phoneData = ["login":"88005553535"]
+    var roleData = ["login":1]
 }

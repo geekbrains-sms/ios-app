@@ -1,0 +1,159 @@
+
+/* Class = "UITabBarItem"; title = "Пользователи"; ObjectID = "1vo-Ek-OAT"; */
+"1vo-Ek-OAT.title" = "Пользователи";
+
+/* Class = "UITextField"; placeholder = "E-Mail (необязательно)"; ObjectID = "2eI-ii-zJe"; */
+"2eI-ii-zJe.placeholder" = "E-Mail (необязательно)";
+
+/* Class = "UIButton"; normalTitle = "Создать"; ObjectID = "4eb-HU-3ql"; */
+"4eb-HU-3ql.normalTitle" = "Создать";
+
+/* Class = "UILabel"; text = "Пароль:"; ObjectID = "5Db-fv-hCE"; */
+"5Db-fv-hCE.text" = "Пароль:";
+
+/* Class = "UINavigationItem"; title = "User"; ObjectID = "5UE-V4-Y8v"; */
+"5UE-V4-Y8v.title" = "User";
+
+/* Class = "UIButton"; normalTitle = "📤 Отгрузить товар"; ObjectID = "6bm-iP-Amf"; */
+"6bm-iP-Amf.normalTitle" = "📤 Отгрузить товар";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "86T-04-jXO"; */
+"86T-04-jXO.placeholder" = "Пароль";
+
+/* Class = "UIButton"; normalTitle = "🗂 Посмотреть остатки складов"; ObjectID = "ADy-qj-dLK"; */
+"ADy-qj-dLK.normalTitle" = "🗂 Посмотреть остатки складов";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "CNg-iO-DCr"; */
+"CNg-iO-DCr.placeholder" = "Логин";
+
+/* Class = "UILabel"; text = "Stock Management System"; ObjectID = "Czx-gI-llD"; */
+"Czx-gI-llD.text" = "Stock Management System";
+
+/* Class = "UIButton"; normalTitle = "Войти"; ObjectID = "Fl6-QE-II1"; */
+"Fl6-QE-II1.normalTitle" = "Войти";
+
+/* Class = "UINavigationController"; title = "User"; ObjectID = "KXk-UW-yxK"; */
+"KXk-UW-yxK.title" = "User";
+
+/* Class = "UITextField"; placeholder = "ФИО"; ObjectID = "M0o-5R-9Fn"; */
+"M0o-5R-9Fn.placeholder" = "ФИО";
+
+/* Class = "UIButton"; normalTitle = "📝 Изменить номенклатуру"; ObjectID = "MTD-XL-d3C"; */
+"MTD-XL-d3C.normalTitle" = "📝 Изменить номенклатуру";
+
+/* Class = "UIButton"; normalTitle = "➕ Создать пользователя"; ObjectID = "N3W-iR-f8X"; */
+"N3W-iR-f8X.normalTitle" = "➕ Создать пользователя";
+
+/* Class = "UILabel"; text = "E-Mail:"; ObjectID = "NsB-G4-6fF"; */
+"NsB-G4-6fF.text" = "E-Mail:";
+
+/* Class = "UILabel"; text = "Регистрация"; ObjectID = "Q18-uH-16d"; */
+"Q18-uH-16d.text" = "Регистрация";
+
+/* Class = "UITextField"; placeholder = "Телефон (необязательно)"; ObjectID = "ROt-1V-4TI"; */
+"ROt-1V-4TI.placeholder" = "Телефон (необязательно)";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "RP5-3P-rsZ"; */
+"RP5-3P-rsZ.placeholder" = "Логин";
+
+/* Class = "UILabel"; text = "Пароль:"; ObjectID = "S9m-ii-LtZ"; */
+"S9m-ii-LtZ.text" = "Пароль:";
+
+/* Class = "UILabel"; text = "Логин:"; ObjectID = "SV7-oj-hGr"; */
+"SV7-oj-hGr.text" = "Логин:";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "SY0-ZU-vGn"; */
+"SY0-ZU-vGn.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "➕ Создать новую номенклатуру"; ObjectID = "Sur-78-Qbr"; */
+"Sur-78-Qbr.normalTitle" = "➕ Создать новую номенклатуру";
+
+/* Class = "UITextField"; placeholder = "Логин"; ObjectID = "TIj-7u-Uwf"; */
+"TIj-7u-Uwf.placeholder" = "Логин";
+
+/* Class = "UINavigationItem"; title = "Новый пользователь"; ObjectID = "TY0-Zp-38x"; */
+"TY0-Zp-38x.title" = "Новый пользователь";
+
+/* Class = "UIButton"; normalTitle = "Зарегистрироваться"; ObjectID = "TrZ-Ud-Bb4"; */
+"TrZ-Ud-Bb4.normalTitle" = "Зарегистрироваться";
+
+/* Class = "UILabel"; text = "Пароль:"; ObjectID = "VjA-tC-pJu"; */
+"VjA-tC-pJu.text" = "Пароль:";
+
+/* Class = "UIButton"; normalTitle = "📥 Оприходовать товар"; ObjectID = "VuE-GG-ed7"; */
+"VuE-GG-ed7.normalTitle" = "📥 Оприходовать товар";
+
+/* Class = "UIBarButtonItem"; title = "Выйти"; ObjectID = "Xcf-8I-zzi"; */
+"Xcf-8I-zzi.title" = "Выйти";
+
+/* Class = "UINavigationItem"; title = "Документы пользователей"; ObjectID = "Xqd-MP-toa"; */
+"Xqd-MP-toa.title" = "Документы пользователей";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "aBk-bS-LSU"; */
+"aBk-bS-LSU.title" = " ";
+
+/* Class = "UILabel"; text = "v 0.0.1"; ObjectID = "aML-nV-Upn"; */
+"aML-nV-Upn.text" = "v 0.0.1";
+
+/* Class = "UILabel"; text = "Логин:"; ObjectID = "aSL-MD-p7z"; */
+"aSL-MD-p7z.text" = "Логин:";
+
+/* Class = "UILabel"; text = "ФИО:"; ObjectID = "ao2-xP-JI3"; */
+"ao2-xP-JI3.text" = "ФИО:";
+
+/* Class = "UIButton"; normalTitle = "🗃 Перевести номенклатуру в архив"; ObjectID = "arK-oq-gfq"; */
+"arK-oq-gfq.normalTitle" = "🗃 Перевести номенклатуру в архив";
+
+/* Class = "UITabBarItem"; title = "Товары"; ObjectID = "azN-hw-Q16"; */
+"azN-hw-Q16.title" = "Товары";
+
+/* Class = "UIButton"; normalTitle = "🗑 Удалить пользователя"; ObjectID = "cGo-oE-5uo"; */
+"cGo-oE-5uo.normalTitle" = "🗑 Удалить пользователя";
+
+/* Class = "UIButton"; normalTitle = "📈 Статистика товаров"; ObjectID = "d29-8T-dzv"; */
+"d29-8T-dzv.normalTitle" = "📈 Статистика товаров";
+
+/* Class = "UIButton"; normalTitle = "📝 Изменить пользователя"; ObjectID = "eEk-fC-9Vp"; */
+"eEk-fC-9Vp.normalTitle" = "📝 Изменить пользователя";
+
+/* Class = "UITabBarItem"; title = "Склады"; ObjectID = "ghw-Ik-qbq"; */
+"ghw-Ik-qbq.title" = "Склады";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "hIO-dO-cWf"; */
+"hIO-dO-cWf.placeholder" = "Пароль";
+
+/* Class = "UILabel"; text = "Пароль ещё раз:"; ObjectID = "itc-0P-2IS"; */
+"itc-0P-2IS.text" = "Пароль ещё раз:";
+
+/* Class = "UISegmentedControl"; jYA-sB-AnA.segmentTitles[0] = "User"; ObjectID = "jYA-sB-AnA"; */
+"jYA-sB-AnA.segmentTitles[0]" = "User";
+
+/* Class = "UISegmentedControl"; jYA-sB-AnA.segmentTitles[1] = "Admin"; ObjectID = "jYA-sB-AnA"; */
+"jYA-sB-AnA.segmentTitles[1]" = "Admin";
+
+/* Class = "UIButton"; normalTitle = "📄 Посмотреть документы пользователей"; ObjectID = "jou-RK-nQ7"; */
+"jou-RK-nQ7.normalTitle" = "📄 Посмотреть документы пользователей";
+
+/* Class = "UILabel"; text = "Роль:"; ObjectID = "k96-67-uz5"; */
+"k96-67-uz5.text" = "Роль:";
+
+/* Class = "UILabel"; text = "Телефон:"; ObjectID = "l83-tg-Lj0"; */
+"l83-tg-Lj0.text" = "Телефон:";
+
+/* Class = "UILabel"; text = "Здесь будут отображаться все документы, созданные пользователем"; ObjectID = "nbf-mo-t9y"; */
+"nbf-mo-t9y.text" = "Здесь будут отображаться все документы, созданные пользователем";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "nhC-ju-l1v"; */
+"nhC-ju-l1v.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "pHK-St-nNI"; */
+"pHK-St-nNI.placeholder" = "Пароль";
+
+/* Class = "UILabel"; text = "Логин:"; ObjectID = "qqP-wV-l5K"; */
+"qqP-wV-l5K.text" = "Логин:";
+
+/* Class = "UIButton"; normalTitle = "➕ Создать новый склад"; ObjectID = "sBR-8t-3jx"; */
+"sBR-8t-3jx.normalTitle" = "➕ Создать новый склад";
+
+/* Class = "UIButton"; normalTitle = "Регистрация"; ObjectID = "uU4-if-HQ6"; */
+"uU4-if-HQ6.normalTitle" = "Регистрация";
