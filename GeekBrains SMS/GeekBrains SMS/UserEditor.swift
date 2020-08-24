@@ -42,8 +42,19 @@ class UserEditor: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.navigationItem.title == "Изменить пользователя" {
         session.temp = session.loginList[indexPath.row]
         performSegue(withIdentifier: "editUser", sender: nil)
+        }
+        if self.navigationItem.title == "Удалить пользователя" {
+            let alert = UIAlertController(title: "Удаление пользователя", message: "Пользователь \(tableView.cellForRow(at: indexPath)?.textLabel?.text ?? "") будет удалён", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .destructive, handler: {action in
+                self.session.loginList.remove(at: indexPath.row)
+                self.performSegue(withIdentifier: "deleteDone", sender: nil)
+            }))
+            alert.addAction(UIAlertAction(title: "Отмена", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 
     /*

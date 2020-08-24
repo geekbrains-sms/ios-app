@@ -245,6 +245,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="🗑 Удалить пользователя"/>
+                                <connections>
+                                    <segue destination="gx0-z9-7n5" kind="show" id="ehH-SB-yf6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -832,9 +835,50 @@
             </objects>
             <point key="canvasLocation" x="5326" y="1281"/>
         </scene>
+        <!--Удалить пользователя-->
+        <scene sceneID="8DW-9w-QHp">
+            <objects>
+                <tableViewController id="gx0-z9-7n5" customClass="UserEditor" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LKV-QH-tFd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" textLabel="Oqt-Ca-vCE" style="IBUITableViewCellStyleDefault" id="UWQ-sh-3HO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UWQ-sh-3HO" id="nd6-Y0-9S9">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oqt-Ca-vCE">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gx0-z9-7n5" id="DxN-3N-BWr"/>
+                            <outlet property="delegate" destination="gx0-z9-7n5" id="BjS-M3-vcK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Удалить пользователя" id="HSn-Y8-T6K"/>
+                    <connections>
+                        <segue destination="KXk-UW-yxK" kind="presentation" identifier="deleteDone" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ZXz-00-aQA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdU-P3-Ped" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4169" y="2082"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d2x-wE-Ayv"/>
+        <segue reference="ZXz-00-aQA"/>
         <segue reference="LP9-1O-ukg"/>
     </inferredMetricsTieBreakers>
     <resources>

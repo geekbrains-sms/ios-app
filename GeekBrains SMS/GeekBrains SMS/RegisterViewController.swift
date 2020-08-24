@@ -59,7 +59,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             let phone = phoneInput.text!
             let role = roleInput.selectedSegmentIndex
             
-            if login != "" && password != ""{
+            if login != "" && password != "" && name != ""{
                 if session.loginList.contains(login) {
                     if self.navigationItem.title != "Изменить пользователя"{
                         let alert = UIAlertController(title: "Ошибка", message: "Пользователь с указанным логином уже существует", preferredStyle: .alert)
