@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var emailInput: UITextField!
     @IBOutlet var phoneInput: UITextField!
     @IBOutlet var roleInput: UISegmentedControl!
+    let session = Session.instance
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -31,6 +32,14 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             passwordInput.tag = 4
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
             view.addGestureRecognizer(tap)
+            if self.navigationItem.title == "Изменить пользователя" {
+                self.loginInput.text = session.temp
+                self.nameInput.text = session.nameData[session.temp]
+                self.emailInput.text = session.emailData[session.temp]
+                self.phoneInput.text = session.phoneData[session.temp]
+                self.roleInput.selectedSegmentIndex = session.roleData[session.temp]!
+                self.passwordInput.text = session.loginData[session.temp]
+            }
         }
         
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -49,9 +58,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             let email = emailInput.text!
             let phone = phoneInput.text!
             let role = roleInput.selectedSegmentIndex
-            let session = Session.instance
             
             if login != "" && password != ""{
+                if session.loginList.contains(login) {
+                    if self.navigationItem.title != "Изменить пользователя"{
+                        let alert = UIAlertController(title: "Ошибка", message: "Пользователь с указанным логином уже существует", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alert.addAction(action)
+                        present(alert, animated: true, completion: nil)
+                        return false
+                    }
+                } else {
+                    if self.navigationItem.title == "Изменить пользователя"{
+                        session.loginList.remove(at: session.loginList.firstIndex(of: session.temp)!)
+                    }
+                    session.loginList.append(login)}
                 session.loginData[login] = password
                 session.nameData[login] = name
                 session.emailData[login] = email
