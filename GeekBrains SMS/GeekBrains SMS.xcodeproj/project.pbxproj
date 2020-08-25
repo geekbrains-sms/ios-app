@@ -16,22 +16,26 @@
 		75C4852A24ED730E00A3B8FE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852924ED730E00A3B8FE /* Session.swift */; };
 		75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852B24ED759400A3B8FE /* RegisterViewController.swift */; };
 		75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAE80924F1926A00237610 /* MainViewController.swift */; };
+		75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF4A8F24F433A50030B889 /* UserEditor.swift */; };
 		7E1905A66715E38B71F9E679 /* Pods_GeekBrains_SMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E4EA20715D512BB3F724EE8 /* Pods-GeekBrains SMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekBrains SMS.debug.xcconfig"; path = "Target Support Files/Pods-GeekBrains SMS/Pods-GeekBrains SMS.debug.xcconfig"; sourceTree = "<group>"; };
-		750BB35A24EC1BB00088E21C /* GeekBrains SMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeekBrains SMS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		750BB35A24EC1BB00088E21C /* GB SMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GB SMS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		750BB35D24EC1BB00088E21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750BB35F24EC1BB00088E21C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		750BB36124EC1BB00088E21C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		750BB36424EC1BB00088E21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		750BB36624EC1BBF0088E21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		750BB36924EC1BBF0088E21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750BB36B24EC1BBF0088E21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75BC9E7724F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		75BC9E7824F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		75BC9E7924F2EE3B00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75BC9E7A24F2EE3D00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C4852924ED730E00A3B8FE /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		75C4852B24ED759400A3B8FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		75DAE80924F1926A00237610 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75DF4A8F24F433A50030B889 /* UserEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditor.swift; sourceTree = "<group>"; };
 		7AE1EDC253B2FD27EA419E92 /* Pods-GeekBrains SMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekBrains SMS.release.xcconfig"; path = "Target Support Files/Pods-GeekBrains SMS/Pods-GeekBrains SMS.release.xcconfig"; sourceTree = "<group>"; };
 		A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekBrains_SMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,7 +65,7 @@
 		750BB35B24EC1BB00088E21C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				750BB35A24EC1BB00088E21C /* GeekBrains SMS.app */,
+				750BB35A24EC1BB00088E21C /* GB SMS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +73,7 @@
 		750BB35C24EC1BB00088E21C /* GeekBrains SMS */ = {
 			isa = PBXGroup;
 			children = (
+				75DF4A8F24F433A50030B889 /* UserEditor.swift */,
 				75DAE80924F1926A00237610 /* MainViewController.swift */,
 				75C4852B24ED759400A3B8FE /* RegisterViewController.swift */,
 				75C4852924ED730E00A3B8FE /* Session.swift */,
@@ -119,7 +124,7 @@
 			);
 			name = "GeekBrains SMS";
 			productName = "GeekBrains SMS";
-			productReference = 750BB35A24EC1BB00088E21C /* GeekBrains SMS.app */;
+			productReference = 750BB35A24EC1BB00088E21C /* GB SMS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,6 +148,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 				Base,
 			);
 			mainGroup = 750BB35124EC1BB00088E21C;
@@ -217,6 +223,7 @@
 			files = (
 				75C4852A24ED730E00A3B8FE /* Session.swift in Sources */,
 				75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */,
+				75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */,
 				750BB36224EC1BB00088E21C /* LoginViewController.swift in Sources */,
 				75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */,
 				750BB35E24EC1BB00088E21C /* AppDelegate.swift in Sources */,
@@ -230,7 +237,8 @@
 		750BB36324EC1BB00088E21C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				750BB36424EC1BB00088E21C /* Base */,
+				75BC9E7724F2EE2C00EBB7C9 /* ru */,
+				75BC9E7924F2EE3B00EBB7C9 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -238,7 +246,8 @@
 		750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				750BB36924EC1BBF0088E21C /* Base */,
+				75BC9E7824F2EE2C00EBB7C9 /* ru */,
+				75BC9E7A24F2EE3D00EBB7C9 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -250,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -296,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -350,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +385,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ernokanst.GeekBrains-SMS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GB SMS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ernokanst.GeekBrains-SMS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "GB SMS";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
