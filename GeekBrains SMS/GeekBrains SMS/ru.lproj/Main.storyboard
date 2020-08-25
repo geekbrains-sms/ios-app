@@ -648,9 +648,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Поиск пользователей" id="ci6-yK-SbN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" textLabel="MDl-5G-tbR" style="IBUITableViewCellStyleDefault" id="TCG-M0-Ejk">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TCG-M0-Ejk" id="kl1-1N-kWk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -674,6 +679,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Изменить пользователя" id="zpF-lk-HwZ"/>
                     <connections>
+                        <outlet property="searchBar" destination="ci6-yK-SbN" id="dgv-ZN-mmr"/>
                         <segue destination="ysa-2a-wc9" kind="show" identifier="editUser" id="tgI-mV-LmP"/>
                     </connections>
                 </tableViewController>
@@ -843,9 +849,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Поиск пользователей" id="G44-XF-EPg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" textLabel="Oqt-Ca-vCE" style="IBUITableViewCellStyleDefault" id="UWQ-sh-3HO">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UWQ-sh-3HO" id="nd6-Y0-9S9">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -869,6 +880,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Удалить пользователя" id="HSn-Y8-T6K"/>
                     <connections>
+                        <outlet property="searchBar" destination="G44-XF-EPg" id="fFp-xH-Ju5"/>
                         <segue destination="KXk-UW-yxK" kind="presentation" identifier="deleteDone" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ZXz-00-aQA"/>
                     </connections>
                 </tableViewController>
@@ -883,7 +895,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cube.box.fill" catalog="system" width="128" height="124"/>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
-        <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
+        <image name="person.3.fill" catalog="system" width="32" height="32"/>
+        <image name="rectangle.3.offgrid.fill" catalog="system" width="32" height="32"/>
     </resources>
 </document>
