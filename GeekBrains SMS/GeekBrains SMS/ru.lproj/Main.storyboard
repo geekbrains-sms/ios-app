@@ -281,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbV-HG-g34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="1176"/>
+            <point key="canvasLocation" x="2481" y="1175"/>
         </scene>
         <!--Документы пользователей-->
         <scene sceneID="rj2-7t-VV5">
@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVX-Ih-UGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3212" y="1739"/>
+            <point key="canvasLocation" x="4409" y="2067"/>
         </scene>
         <!--Склады-->
         <scene sceneID="sRZ-DI-n0V">
@@ -396,7 +396,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJY-fs-GIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="-493"/>
+            <point key="canvasLocation" x="743" y="1999"/>
         </scene>
         <!--Товары-->
         <scene sceneID="k8I-wy-4Mn">
@@ -455,11 +455,11 @@
                             <constraint firstItem="Sur-78-Qbr" firstAttribute="top" secondItem="d29-8T-dzv" secondAttribute="bottom" constant="8" id="yQo-k1-CJY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Товары" image="shippingbox.fill" catalog="system" landscapeImage="shippingbox.fill" largeContentSizeImage="shippingbox.fill" id="azN-hw-Q16"/>
+                    <tabBarItem key="tabBarItem" title="Товары" image="barcode" catalog="system" landscapeImage="barcode" largeContentSizeImage="barcode" id="azN-hw-Q16"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juE-fP-Cfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="-219"/>
+            <point key="canvasLocation" x="2481" y="-265"/>
         </scene>
         <!--User-->
         <scene sceneID="JDS-Y8-MrR">
@@ -486,7 +486,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUS-w3-GIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="202"/>
+            <point key="canvasLocation" x="1631" y="165"/>
         </scene>
         <!--Новый пользователь-->
         <scene sceneID="bFy-Xn-Cm3">
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPs-Mh-OfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3317.5999999999999" y="1034.9325337331336"/>
+            <point key="canvasLocation" x="4409" y="496"/>
         </scene>
         <!--Изменить пользователя-->
         <scene sceneID="U6d-zU-IpF">
@@ -841,7 +841,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2a1-HK-uO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5326" y="1281"/>
+            <point key="canvasLocation" x="5218" y="1281"/>
         </scene>
         <!--Удалить пользователя-->
         <scene sceneID="8DW-9w-QHp">
@@ -888,17 +888,17 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdU-P3-Ped" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4169" y="2082"/>
+            <point key="canvasLocation" x="5217" y="2067"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZXz-00-aQA"/>
+        <segue reference="Zo9-z6-EIe"/>
         <segue reference="m5K-3G-iHl"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="barcode" catalog="system" width="128" height="93"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="128" height="81"/>
-        <image name="shippingbox.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

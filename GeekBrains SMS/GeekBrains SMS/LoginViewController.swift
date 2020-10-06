@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import Foundation
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var loginInput: UITextField!
@@ -23,6 +25,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
     }
     
+    func ServerAuth() {
+        let session = Session.instance
+        let login = loginInput.text!
+        let password = passwordInput.text!
+        let parameters: [String: String] = ["password": password, "username": login]
+        AF.request("http://46.17.104.250:8189/api/v1/auth", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default).responseData { response in
+            guard let data = response.value else { return }
+            struct LoginResponse: Codable {var token: String}
+            do {
+                let decoded = try JSONDecoder().decode(LoginResponse.self, from: data)
+                print(decoded.token)
+                session.token = decoded.token
+                session.login = login
+                self.performSegue(withIdentifier: "login", sender: (Any).self)
+            } catch {
+                print(error)
+                let alert = UIAlertController(title: "Ошибка входа", message: "Возможно, пользователя не существует или пользовательские данные введены некорректно", preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
            nextField.becomeFirstResponder()
@@ -34,22 +60,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "registration" {return true}
-        let login = loginInput.text!
-        let password = passwordInput.text!
-        let session = Session.instance
-        
-        if session.loginData.keys.contains(login) {
-            if session.loginData[login] == password {
-                session.login = login
-                return true } else {return false}
-        } else {
-            let alert = UIAlertController(title: "Пользователь с такими логином и паролем не найден", message: "Возможно, пользователя не существует или пользовательские данные введены некорректно", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-            alert.addAction(action)
-            present(alert, animated: true, completion: nil)
-            return false
-        }
+        ServerAuth()
+        return false
     }
-
 }
 

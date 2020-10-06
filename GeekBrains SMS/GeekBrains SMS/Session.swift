@@ -23,4 +23,5 @@ class Session {
     var phoneData = ["login":"88005553535"]
     var roleData = ["login":1]
     var temp = ""
+    var token = ""
 }
