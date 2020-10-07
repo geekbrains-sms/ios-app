@@ -13,6 +13,7 @@
 		750BB36524EC1BB00088E21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36324EC1BB00088E21C /* Main.storyboard */; };
 		750BB36724EC1BBF0088E21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36624EC1BBF0088E21C /* Assets.xcassets */; };
 		750BB36A24EC1BBF0088E21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */; };
+		75208103252E480200C4462E /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75208102252E480200C4462E /* CategoryController.swift */; };
 		75C4852A24ED730E00A3B8FE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852924ED730E00A3B8FE /* Session.swift */; };
 		75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAE80924F1926A00237610 /* MainViewController.swift */; };
 		75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF4A8F24F433A50030B889 /* UserEditor.swift */; };
@@ -28,6 +29,7 @@
 		750BB36124EC1BB00088E21C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		750BB36624EC1BBF0088E21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750BB36B24EC1BBF0088E21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75208102252E480200C4462E /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		75BC9E7724F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		75BC9E7824F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		75BC9E7924F2EE3B00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				750BB35D24EC1BB00088E21C /* AppDelegate.swift */,
 				750BB35F24EC1BB00088E21C /* SceneDelegate.swift */,
 				750BB36124EC1BB00088E21C /* LoginViewController.swift */,
+				75208102252E480200C4462E /* CategoryController.swift */,
 				750BB36324EC1BB00088E21C /* Main.storyboard */,
 				750BB36624EC1BBF0088E21C /* Assets.xcassets */,
 				750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 				75E11FDE252DE4BE004DD908 /* RegisterViewController.swift in Sources */,
 				750BB36224EC1BB00088E21C /* LoginViewController.swift in Sources */,
 				75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */,
+				75208103252E480200C4462E /* CategoryController.swift in Sources */,
 				750BB35E24EC1BB00088E21C /* AppDelegate.swift in Sources */,
 				750BB36024EC1BB00088E21C /* SceneDelegate.swift in Sources */,
 			);

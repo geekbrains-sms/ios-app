@@ -24,10 +24,41 @@ class MainViewController: UITabBarController {
             do {
                 let decoded = try JSONDecoder().decode([UserResponse].self, from: data)
                 print(decoded)
+                session.loginList = []
+                session.loginID = [:]
+                session.nameData = [:]
                 for p in decoded {
                     session.loginList.append(p.login)
                     session.loginID[p.login] = p.id
                     session.nameData[p.login] = p.firstname + " " + p.lastname
+                }
+            } catch {
+                print(error)
+                let alert = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func GetCategories() {
+        let session = Session.instance
+        let headers: HTTPHeaders = [.authorization(bearerToken: session.token)]
+        AF.request("http://46.17.104.250:8189/api/v1/categories", method: .get, headers: headers).responseData { response in
+            guard let data = response.value else { return }
+            struct CategoryResponse: Codable {
+                var id: Int
+                var title: String
+            }
+            do {
+                let decoded = try JSONDecoder().decode([CategoryResponse].self, from: data)
+                print(decoded)
+                session.categoryList = []
+                session.categoryID = [:]
+                for c in decoded {
+                    session.categoryList.append(c.title)
+                    session.categoryID[c.title] = c.id
                 }
             } catch {
                 print(error)
@@ -44,6 +75,7 @@ class MainViewController: UITabBarController {
         let session = Session.instance
         self.navigationItem.title = session.login
         GetUsers()
+        GetCategories()
         // Do any additional setup after loading the view.
     }
     
