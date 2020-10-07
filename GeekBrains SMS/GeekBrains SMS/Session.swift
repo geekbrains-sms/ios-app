@@ -17,8 +17,9 @@ class Session {
     
     var loginData = ["login":"password"]
     var login = ""
-    var loginList = ["login"]
-    var nameData = ["login":"Тестов Тест Тестович"]
+    var loginID: [String : Int] = [:]
+    var loginList: [String] = []
+    var nameData: [String : String] = [:]
     var emailData = ["login":"12w8w21@gmail.com"]
     var phoneData = ["login":"88005553535"]
     var roleData = ["login":1]

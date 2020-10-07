@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -459,72 +459,72 @@
             <objects>
                 <viewController id="AOK-NV-aN7" customClass="RegisterViewController" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="odh-sP-zUL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdU-TQ-sOM">
-                                <rect key="frame" x="16" y="455" width="343" height="34"/>
+                                <rect key="frame" x="16" y="499" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="join" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-l0-S4R">
-                                <rect key="frame" x="16" y="427" width="64" height="20"/>
+                                <rect key="frame" x="16" y="471" width="64" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-kU-Ji7">
-                                <rect key="frame" x="16" y="36" width="343" height="34"/>
+                                <rect key="frame" x="16" y="80" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-Ow-jPw">
-                                <rect key="frame" x="16" y="8" width="54" height="20"/>
+                                <rect key="frame" x="16" y="52" width="54" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AwQ-5p-2jC">
-                                <rect key="frame" x="16" y="107" width="343" height="34"/>
+                                <rect key="frame" x="16" y="151" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="given-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kna-Jk-Dn6">
-                                <rect key="frame" x="16" y="78" width="38" height="21"/>
+                                <rect key="frame" x="16" y="122" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmf-nO-6th">
-                                <rect key="frame" x="16" y="248" width="343" height="34"/>
+                                <rect key="frame" x="16" y="292" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-kL-UAF">
-                                <rect key="frame" x="16" y="220" width="53" height="20"/>
+                                <rect key="frame" x="16" y="264" width="53" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knZ-eK-0nQ">
-                                <rect key="frame" x="16" y="318" width="343" height="34"/>
+                                <rect key="frame" x="16" y="362" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpw-0Y-UGM">
-                                <rect key="frame" x="16" y="290" width="74" height="20"/>
+                                <rect key="frame" x="16" y="334" width="74" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Роль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpE-5l-vfE">
-                                <rect key="frame" x="16" y="360" width="43" height="20"/>
+                                <rect key="frame" x="16" y="404" width="43" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Nbo-mM-h8r">
-                                <rect key="frame" x="16" y="388" width="239" height="32"/>
+                                <rect key="frame" x="16" y="432" width="239" height="32"/>
                                 <segments>
                                     <segment title="Customer"/>
                                     <segment title="Manager"/>
@@ -532,7 +532,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goh-QU-kRD">
-                                <rect key="frame" x="153" y="497" width="69" height="33"/>
+                                <rect key="frame" x="153" y="541" width="69" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Создать"/>
                                 <connections>
@@ -540,12 +540,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-QM-Afh">
-                                <rect key="frame" x="16" y="178" width="343" height="34"/>
+                                <rect key="frame" x="16" y="222" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="family-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkZ-c4-b69">
-                                <rect key="frame" x="16" y="149" width="78" height="21"/>
+                                <rect key="frame" x="16" y="193" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -561,13 +561,13 @@
                             <constraint firstItem="Xpw-0Y-UGM" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="4Yv-yU-3hc"/>
                             <constraint firstItem="WdU-TQ-sOM" firstAttribute="top" secondItem="b7o-l0-S4R" secondAttribute="bottom" constant="8" id="8O5-W4-E7Q"/>
                             <constraint firstItem="gmf-nO-6th" firstAttribute="top" secondItem="S5W-kL-UAF" secondAttribute="bottom" constant="8" id="AH1-Xo-EWv"/>
+                            <constraint firstItem="tjf-Ow-jPw" firstAttribute="top" secondItem="5ah-eA-9vs" secondAttribute="top" constant="8" id="B2Z-IY-j7f"/>
                             <constraint firstItem="WdU-TQ-sOM" firstAttribute="top" secondItem="b7o-l0-S4R" secondAttribute="bottom" constant="8" id="BS7-S1-7hg"/>
                             <constraint firstItem="5ah-eA-9vs" firstAttribute="trailing" secondItem="SpX-QM-Afh" secondAttribute="trailing" constant="16" id="DK1-iv-ZW4"/>
                             <constraint firstItem="5ah-eA-9vs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tjf-Ow-jPw" secondAttribute="trailing" symbolic="YES" id="ELo-eK-nzd"/>
                             <constraint firstItem="NpE-5l-vfE" firstAttribute="top" secondItem="knZ-eK-0nQ" secondAttribute="bottom" constant="8" id="EbP-xc-Ghv"/>
                             <constraint firstItem="Kna-Jk-Dn6" firstAttribute="top" secondItem="rMA-kU-Ji7" secondAttribute="bottom" constant="8" id="F7G-Uw-H4D"/>
                             <constraint firstItem="5ah-eA-9vs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nbo-mM-h8r" secondAttribute="trailing" symbolic="YES" id="Fzq-Dq-hRb"/>
-                            <constraint firstItem="tjf-Ow-jPw" firstAttribute="top" secondItem="5ah-eA-9vs" secondAttribute="top" constant="8" id="GHA-ui-xli"/>
                             <constraint firstItem="Nbo-mM-h8r" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="GuZ-Bt-UYl"/>
                             <constraint firstItem="5ah-eA-9vs" firstAttribute="trailing" secondItem="knZ-eK-0nQ" secondAttribute="trailing" constant="16" id="Ij6-Tb-TYC"/>
                             <constraint firstItem="Xpw-0Y-UGM" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="Jvd-05-L1y"/>
@@ -609,7 +609,6 @@
                             <constraint firstItem="knZ-eK-0nQ" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="dM0-ot-Rp7"/>
                             <constraint firstItem="rMA-kU-Ji7" firstAttribute="top" secondItem="tjf-Ow-jPw" secondAttribute="bottom" constant="8" id="djG-Cw-0GW"/>
                             <constraint firstItem="NpE-5l-vfE" firstAttribute="top" secondItem="knZ-eK-0nQ" secondAttribute="bottom" constant="8" id="dzt-Us-xo4"/>
-                            <constraint firstItem="tjf-Ow-jPw" firstAttribute="top" secondItem="5ah-eA-9vs" secondAttribute="top" constant="8" id="eAp-FS-hV0"/>
                             <constraint firstItem="WkZ-c4-b69" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="ehB-3a-ezE"/>
                             <constraint firstItem="Kna-Jk-Dn6" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="enj-sE-xxu"/>
                             <constraint firstItem="Kna-Jk-Dn6" firstAttribute="top" secondItem="rMA-kU-Ji7" secondAttribute="bottom" constant="8" id="fWf-d1-rvj"/>
@@ -641,9 +640,7 @@
                             <constraint firstItem="knZ-eK-0nQ" firstAttribute="leading" secondItem="5ah-eA-9vs" secondAttribute="leading" constant="16" id="zYq-yy-G8s"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Новый пользователь" id="TY0-Zp-38x">
-                        <barButtonItem key="backBarButtonItem" title=" " id="aBk-bS-LSU"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Новый пользователь" id="M8P-oK-QAs"/>
                     <connections>
                         <outlet property="emailInput" destination="gmf-nO-6th" id="jIf-sL-gaE"/>
                         <outlet property="loginInput" destination="rMA-kU-Ji7" id="JnV-hm-CdS"/>
@@ -651,6 +648,7 @@
                         <outlet property="passwordInput" destination="WdU-TQ-sOM" id="9a9-tF-mZn"/>
                         <outlet property="phoneInput" destination="knZ-eK-0nQ" id="MJW-jK-Izq"/>
                         <outlet property="roleInput" destination="Nbo-mM-h8r" id="I0O-sJ-FP0"/>
+                        <outlet property="surnameInput" destination="SpX-QM-Afh" id="iYF-4D-YDi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPs-Mh-OfB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -662,7 +660,7 @@
             <objects>
                 <tableViewController id="mFo-zD-Z72" customClass="UserEditor" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DQ2-k9-Qk0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Поиск пользователей" id="ci6-yK-SbN">
@@ -709,72 +707,72 @@
             <objects>
                 <viewController id="ysa-2a-wc9" customClass="RegisterViewController" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UBf-JS-oXu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AA0-AY-nxH">
-                                <rect key="frame" x="16" y="455" width="343" height="34"/>
+                                <rect key="frame" x="16" y="499" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="join" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYv-wU-gOx">
-                                <rect key="frame" x="16" y="427" width="64" height="20"/>
+                                <rect key="frame" x="16" y="471" width="64" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lph-yN-KCy">
-                                <rect key="frame" x="16" y="36" width="343" height="34"/>
+                                <rect key="frame" x="16" y="80" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQm-aU-vSk">
-                                <rect key="frame" x="16" y="8" width="54" height="20"/>
+                                <rect key="frame" x="16" y="52" width="54" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hAX-IC-Fyc">
-                                <rect key="frame" x="16" y="107" width="343" height="34"/>
+                                <rect key="frame" x="16" y="151" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="given-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-03-yyy">
-                                <rect key="frame" x="16" y="78" width="38" height="21"/>
+                                <rect key="frame" x="16" y="122" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SG5-90-GT7">
-                                <rect key="frame" x="16" y="248" width="343" height="34"/>
+                                <rect key="frame" x="16" y="292" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ott-GC-ft6">
-                                <rect key="frame" x="16" y="220" width="53" height="20"/>
+                                <rect key="frame" x="16" y="264" width="53" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IOp-9s-QmQ">
-                                <rect key="frame" x="16" y="318" width="343" height="34"/>
+                                <rect key="frame" x="16" y="362" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-Eg-8ch">
-                                <rect key="frame" x="16" y="290" width="74" height="20"/>
+                                <rect key="frame" x="16" y="334" width="74" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Роль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2h-KJ-TyS">
-                                <rect key="frame" x="16" y="360" width="43" height="20"/>
+                                <rect key="frame" x="16" y="404" width="43" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y2f-em-QFP">
-                                <rect key="frame" x="16" y="388" width="239" height="32"/>
+                                <rect key="frame" x="16" y="432" width="239" height="32"/>
                                 <segments>
                                     <segment title="Customer"/>
                                     <segment title="Manager"/>
@@ -782,17 +780,17 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8g-Hp-XVo">
-                                <rect key="frame" x="146" y="497" width="83" height="33"/>
+                                <rect key="frame" x="146" y="541" width="83" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Изменить"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия (необязательно)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTq-z2-p3t">
-                                <rect key="frame" x="16" y="178" width="343" height="34"/>
+                                <rect key="frame" x="16" y="222" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="family-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lar-O1-DFk">
-                                <rect key="frame" x="16" y="149" width="78" height="21"/>
+                                <rect key="frame" x="16" y="193" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -893,6 +891,15 @@
                     <navigationItem key="navigationItem" title="Изменить пользователя" id="9cN-qF-3xV">
                         <barButtonItem key="backBarButtonItem" title=" " id="o4y-DD-S3u"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailInput" destination="SG5-90-GT7" id="Wvk-C0-RSF"/>
+                        <outlet property="loginInput" destination="lph-yN-KCy" id="n64-tj-rAY"/>
+                        <outlet property="nameInput" destination="hAX-IC-Fyc" id="gnW-dK-uTb"/>
+                        <outlet property="passwordInput" destination="AA0-AY-nxH" id="tw6-b3-gkw"/>
+                        <outlet property="phoneInput" destination="IOp-9s-QmQ" id="9oU-7H-iOf"/>
+                        <outlet property="roleInput" destination="y2f-em-QFP" id="mHg-Jh-rgN"/>
+                        <outlet property="surnameInput" destination="mTq-z2-p3t" id="CiO-cb-K2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2a1-HK-uO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -947,7 +954,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XPE-KT-juX"/>
         <segue reference="5dt-PQ-PRN"/>
         <segue reference="m5K-3G-iHl"/>
     </inferredMetricsTieBreakers>

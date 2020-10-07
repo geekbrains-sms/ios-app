@@ -14,15 +14,13 @@ class UserEditor: UITableViewController, UISearchBarDelegate {
     var searchActive = false
     var data: [String] = []
     var filteredData: [String] = []
-    var loginForNames : [String:String] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
         for l in session.loginList {
-            data.append(session.nameData[l]!)
-            filteredData.append(session.nameData[l]!)
-            loginForNames[session.nameData[l]!] = l
+            data.append(session.nameData[l]!+"☢︎"+l)
+            filteredData.append(session.nameData[l]!+"☢︎"+l)
         }
 
         // Uncomment the following line to preserve selection between presentations
@@ -47,14 +45,14 @@ class UserEditor: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "user", for: indexPath)
 
-        cell.textLabel?.text = filteredData[indexPath.row]
+        cell.textLabel?.text = filteredData[indexPath.row].components(separatedBy: "☢︎")[0]
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if self.navigationItem.title == "Изменить пользователя" {
-            session.temp = loginForNames[(self.tableView.cellForRow(at: indexPath)?.textLabel?.text)!]!
+        if self.navigationItem.title == "Все пользователи" {
+            session.temp = (filteredData[indexPath.row].components(separatedBy: "☢︎")[1])
         performSegue(withIdentifier: "editUser", sender: nil)
         }
         if self.navigationItem.title == "Удалить пользователя" {
