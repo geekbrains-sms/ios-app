@@ -13,10 +13,11 @@
 		750BB36524EC1BB00088E21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36324EC1BB00088E21C /* Main.storyboard */; };
 		750BB36724EC1BBF0088E21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36624EC1BBF0088E21C /* Assets.xcassets */; };
 		750BB36A24EC1BBF0088E21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */; };
+		75208103252E480200C4462E /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75208102252E480200C4462E /* CategoryController.swift */; };
 		75C4852A24ED730E00A3B8FE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852924ED730E00A3B8FE /* Session.swift */; };
-		75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852B24ED759400A3B8FE /* RegisterViewController.swift */; };
 		75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAE80924F1926A00237610 /* MainViewController.swift */; };
 		75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF4A8F24F433A50030B889 /* UserEditor.swift */; };
+		75E11FDE252DE4BE004DD908 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E11FDD252DE4BE004DD908 /* RegisterViewController.swift */; };
 		7E1905A66715E38B71F9E679 /* Pods_GeekBrains_SMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,14 +29,15 @@
 		750BB36124EC1BB00088E21C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		750BB36624EC1BBF0088E21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		750BB36B24EC1BBF0088E21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75208102252E480200C4462E /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 		75BC9E7724F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		75BC9E7824F2EE2C00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		75BC9E7924F2EE3B00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75BC9E7A24F2EE3D00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C4852924ED730E00A3B8FE /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		75C4852B24ED759400A3B8FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		75DAE80924F1926A00237610 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		75DF4A8F24F433A50030B889 /* UserEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditor.swift; sourceTree = "<group>"; };
+		75E11FDD252DE4BE004DD908 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "/Users/ernokanst/Desktop/Swift/ios-app/GeekBrains SMS/GeekBrains SMS/RegisterViewController.swift"; sourceTree = "<absolute>"; };
 		7AE1EDC253B2FD27EA419E92 /* Pods-GeekBrains SMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeekBrains SMS.release.xcconfig"; path = "Target Support Files/Pods-GeekBrains SMS/Pods-GeekBrains SMS.release.xcconfig"; sourceTree = "<group>"; };
 		A04CBF92B919C1EA8359CA12 /* Pods_GeekBrains_SMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeekBrains_SMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,13 +75,14 @@
 		750BB35C24EC1BB00088E21C /* GeekBrains SMS */ = {
 			isa = PBXGroup;
 			children = (
+				75E11FDD252DE4BE004DD908 /* RegisterViewController.swift */,
 				75DF4A8F24F433A50030B889 /* UserEditor.swift */,
 				75DAE80924F1926A00237610 /* MainViewController.swift */,
-				75C4852B24ED759400A3B8FE /* RegisterViewController.swift */,
 				75C4852924ED730E00A3B8FE /* Session.swift */,
 				750BB35D24EC1BB00088E21C /* AppDelegate.swift */,
 				750BB35F24EC1BB00088E21C /* SceneDelegate.swift */,
 				750BB36124EC1BB00088E21C /* LoginViewController.swift */,
+				75208102252E480200C4462E /* CategoryController.swift */,
 				750BB36324EC1BB00088E21C /* Main.storyboard */,
 				750BB36624EC1BBF0088E21C /* Assets.xcassets */,
 				750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */,
@@ -134,7 +137,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = ernokanst;
 				TargetAttributes = {
 					750BB35924EC1BB00088E21C = {
@@ -222,10 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C4852A24ED730E00A3B8FE /* Session.swift in Sources */,
-				75C4852C24ED759400A3B8FE /* RegisterViewController.swift in Sources */,
 				75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */,
+				75E11FDE252DE4BE004DD908 /* RegisterViewController.swift in Sources */,
 				750BB36224EC1BB00088E21C /* LoginViewController.swift in Sources */,
 				75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */,
+				75208103252E480200C4462E /* CategoryController.swift in Sources */,
 				750BB35E24EC1BB00088E21C /* AppDelegate.swift in Sources */,
 				750BB36024EC1BB00088E21C /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +286,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -313,6 +318,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -343,6 +349,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -367,6 +374,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

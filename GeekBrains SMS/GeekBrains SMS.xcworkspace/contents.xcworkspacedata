@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ernokanst/Desktop/Swift/ios-app/GeekBrains SMS/GeekBrains SMS/RegisterViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:GeekBrains SMS.xcodeproj">
    </FileRef>
    <FileRef
