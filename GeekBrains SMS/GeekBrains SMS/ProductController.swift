@@ -21,13 +21,13 @@ class ProductController: UITableViewController, UISearchBarDelegate {
         searchBar.delegate = self
         if session.temp == "Все товары"{
         for l in session.products {
-            data.append(l.product.title+"☢︎"+String(l.product.id))
-            filteredData.append(l.product.title+"☢︎"+String(l.product.id))
+            data.append(l.product.title)
+            filteredData.append(l.product.title)
         }} else {
             for l in session.products {
                 if l.product.categories[0].title == session.temp{
-                data.append(l.product.title+"☢︎"+String(l.product.id))
-                    filteredData.append(l.product.title+"☢︎"+String(l.product.id))}}}
+                data.append(l.product.title)
+                    filteredData.append(l.product.title)}}}
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,7 +51,7 @@ class ProductController: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
 
-        cell.textLabel?.text = filteredData[indexPath.row].components(separatedBy: "☢︎")[0]
+        cell.textLabel?.text = filteredData[indexPath.row]
         for l in session.products { if l.product.title==cell.textLabel?.text {
             cell.detailTextLabel?.text = String(l.balance) + " " + l.product.unit.title
         }}
@@ -60,7 +60,7 @@ class ProductController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        session.temp = (filteredData[indexPath.row].components(separatedBy: "☢︎")[1])
+        session.temp = filteredData[indexPath.row]
         //performSegue(withIdentifier: "editUser", sender: nil)
     }
     

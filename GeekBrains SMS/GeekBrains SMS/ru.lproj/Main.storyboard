@@ -559,19 +559,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-eK-oqx">
-                                <rect key="frame" x="166" y="93" width="201" height="33"/>
+                                <rect key="frame" x="166" y="85" width="201" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Категория">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ0-Cr-8C6">
-                                <rect key="frame" x="166" y="134" width="201" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="BwB-eV-jpU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Описание">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                             </button>
@@ -609,6 +599,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ0-Cr-8C6">
+                                <rect key="frame" x="166" y="118" width="201" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="BwB-eV-jpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Описание">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e1u-4f-oat"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -628,31 +628,31 @@
                             <constraint firstItem="bQ0-Cr-8C6" firstAttribute="trailing" secondItem="1h5-Cv-BwW" secondAttribute="trailing" id="NNW-Yg-tqr"/>
                             <constraint firstItem="uJu-eK-oqx" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="NiU-AO-eHi"/>
                             <constraint firstItem="OIj-Nc-14q" firstAttribute="leading" secondItem="5kp-mU-4wI" secondAttribute="trailing" constant="8" id="PKg-db-rDm"/>
-                            <constraint firstItem="bQ0-Cr-8C6" firstAttribute="top" secondItem="uJu-eK-oqx" secondAttribute="bottom" constant="8" symbolic="YES" id="PTf-jO-k7f"/>
                             <constraint firstItem="1h5-Cv-BwW" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="PtK-Cm-8gZ"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="bottom" secondItem="OIj-Nc-14q" secondAttribute="bottom" constant="8" id="SZB-Qm-r6N"/>
                             <constraint firstItem="e1r-yu-J5K" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="WXQ-SV-EdI"/>
                             <constraint firstItem="5kp-mU-4wI" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="Xze-qg-DUf"/>
-                            <constraint firstItem="uJu-eK-oqx" firstAttribute="top" secondItem="6fQ-BP-k4j" secondAttribute="bottom" constant="8" id="YIb-1D-x5r"/>
                             <constraint firstItem="e1r-yu-J5K" firstAttribute="top" secondItem="e1u-4f-oat" secondAttribute="top" constant="8" id="ZJz-wJ-0gd"/>
                             <constraint firstItem="OIj-Nc-14q" firstAttribute="leading" secondItem="5kp-mU-4wI" secondAttribute="trailing" constant="8" id="a3M-eg-CQQ"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="PIB-KL-E85" secondAttribute="trailing" constant="16" id="bgz-HX-cFs"/>
+                            <constraint firstItem="bQ0-Cr-8C6" firstAttribute="top" secondItem="uJu-eK-oqx" secondAttribute="bottom" id="bhy-5D-zxN"/>
                             <constraint firstItem="6fQ-BP-k4j" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="efP-kc-BNu"/>
                             <constraint firstItem="Do1-1J-iLk" firstAttribute="top" secondItem="1h5-Cv-BwW" secondAttribute="bottom" constant="8" id="f2Z-j6-PhZ"/>
                             <constraint firstItem="uJu-eK-oqx" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="huS-mP-ynT"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Do1-1J-iLk" secondAttribute="trailing" id="ij8-Q9-Yhn"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="1h5-Cv-BwW" secondAttribute="trailing" constant="8" id="k9o-aU-soH"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="uJu-eK-oqx" secondAttribute="trailing" constant="8" id="kGX-C7-KD3"/>
+                            <constraint firstItem="uJu-eK-oqx" firstAttribute="top" secondItem="6fQ-BP-k4j" secondAttribute="bottom" id="kmr-gY-3sE"/>
                             <constraint firstItem="Do1-1J-iLk" firstAttribute="top" secondItem="1h5-Cv-BwW" secondAttribute="bottom" constant="8" id="p7g-V4-lQs"/>
                             <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="OIj-Nc-14q" secondAttribute="trailing" constant="8" id="scb-fL-hS1"/>
                             <constraint firstItem="6fQ-BP-k4j" firstAttribute="top" secondItem="e1u-4f-oat" secondAttribute="top" constant="8" id="tgJ-r2-P4d"/>
-                            <constraint firstItem="uJu-eK-oqx" firstAttribute="top" secondItem="6fQ-BP-k4j" secondAttribute="bottom" constant="8" id="xX9-mr-DLi"/>
+                            <constraint firstItem="1h5-Cv-BwW" firstAttribute="top" secondItem="bQ0-Cr-8C6" secondAttribute="bottom" constant="8" id="zWC-Ia-a1m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Товар" id="OrW-KI-caY"/>
                     <connections>
                         <outlet property="category" destination="uJu-eK-oqx" id="dss-VE-tQG"/>
-                        <outlet property="description" destination="bQ0-Cr-8C6" id="YBZ-y3-h7i"/>
+                        <outlet property="desc" destination="bQ0-Cr-8C6" id="VQ4-uU-oYV"/>
                         <outlet property="name" destination="6fQ-BP-k4j" id="naG-I9-YNs"/>
                         <outlet property="quantity" destination="Do1-1J-iLk" id="UeF-Ld-wdk"/>
                         <outlet property="supplier" destination="1h5-Cv-BwW" id="nko-Af-0Yi"/>

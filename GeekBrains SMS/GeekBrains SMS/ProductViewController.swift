@@ -23,7 +23,7 @@ class ProductViewController: UIViewController {
             if p.product.title == session.temp {
                 self.name.setTitle(p.product.title, for: .normal)
                 self.category.setTitle(p.product.categories[0].title, for: .normal)
-                self.desc.setTitle(p.product.description, for: .normal)
+                self.desc.setTitle("Описание: " + (p.product.description ?? ""), for: .normal)
                 self.supplier.text = """
  Поставщик: ООО "Поставщик"
  """
