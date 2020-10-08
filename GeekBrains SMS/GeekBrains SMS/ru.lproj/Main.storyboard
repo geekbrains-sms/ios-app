@@ -465,7 +465,9 @@
                             <outlet property="delegate" destination="cCY-Wl-fM0" id="xAa-6K-Dtq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Категории" id="gSc-KY-aA7"/>
+                    <navigationItem key="navigationItem" title="Категории" id="gSc-KY-aA7">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="plus" catalog="system" id="c2o-nJ-Oan"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wX-6g-n1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -513,6 +515,9 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7t4-pr-xTB" kind="show" id="p0d-zi-py4"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -520,7 +525,9 @@
                             <outlet property="delegate" destination="vmY-hw-gTL" id="ayj-OE-tzl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Товары" id="uLI-Im-LRE"/>
+                    <navigationItem key="navigationItem" title="Товары" id="uLI-Im-LRE">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="plus" catalog="system" id="W4K-oS-ks0"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="7DX-87-aKC" id="bcd-Ja-N9M"/>
                     </connections>
@@ -528,6 +535,132 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5II-b2-flD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4290" y="-228"/>
+        </scene>
+        <!--Товар-->
+        <scene sceneID="bOh-ek-lxd">
+            <objects>
+                <viewController id="7t4-pr-xTB" customClass="ProductViewController" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyV-e0-CFi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GBSMS" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-yu-J5K">
+                                <rect key="frame" x="8" y="52" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5fF-3X-Gqx"/>
+                                    <constraint firstAttribute="height" constant="150" id="O6T-qB-Nkm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fQ-BP-k4j">
+                                <rect key="frame" x="166" y="52" width="201" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Название">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-eK-oqx">
+                                <rect key="frame" x="166" y="93" width="201" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Категория">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ0-Cr-8C6">
+                                <rect key="frame" x="166" y="134" width="201" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="BwB-eV-jpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Описание">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поставщик" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1h5-Cv-BwW">
+                                <rect key="frame" x="8" y="210" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kp-mU-4wI">
+                                <rect key="frame" x="8" y="632" width="175.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Новая поставка" image="plus" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIj-Nc-14q">
+                                <rect key="frame" x="191.5" y="632" width="175.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Новая отгрузка" image="minus" catalog="system">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-KL-E85">
+                                <rect key="frame" x="16" y="586.5" width="343" height="37.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PIB-KL-E85" secondAttribute="height" multiplier="82:9" id="oNo-Ep-Q8U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="📄 История транзакций"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do1-1J-iLk">
+                                <rect key="frame" x="16" y="239" width="343" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e1u-4f-oat"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Do1-1J-iLk" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="16" id="0Wh-Dx-vhZ"/>
+                            <constraint firstItem="bQ0-Cr-8C6" firstAttribute="leading" secondItem="uJu-eK-oqx" secondAttribute="leading" id="1P0-mW-u1o"/>
+                            <constraint firstItem="Do1-1J-iLk" firstAttribute="centerX" secondItem="oyV-e0-CFi" secondAttribute="centerX" id="1ky-QZ-Ber"/>
+                            <constraint firstItem="5kp-mU-4wI" firstAttribute="top" secondItem="PIB-KL-E85" secondAttribute="bottom" constant="8" id="20A-OS-vd2"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="uJu-eK-oqx" secondAttribute="trailing" constant="8" id="48C-B0-dBE"/>
+                            <constraint firstItem="1h5-Cv-BwW" firstAttribute="top" secondItem="e1r-yu-J5K" secondAttribute="bottom" constant="8" id="6QY-Pc-U2f"/>
+                            <constraint firstItem="PIB-KL-E85" firstAttribute="width" secondItem="PIB-KL-E85" secondAttribute="height" multiplier="82:9" id="Fh5-Fx-ati"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="6fQ-BP-k4j" secondAttribute="trailing" constant="8" id="GA0-8j-KPx"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="OIj-Nc-14q" secondAttribute="trailing" constant="8" id="IWf-Oi-hqb"/>
+                            <constraint firstItem="PIB-KL-E85" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="16" id="ImS-Y7-aqQ"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="bottom" secondItem="5kp-mU-4wI" secondAttribute="bottom" constant="8" id="JKw-SQ-cX0"/>
+                            <constraint firstItem="OIj-Nc-14q" firstAttribute="width" secondItem="5kp-mU-4wI" secondAttribute="width" id="LOX-LO-hVx"/>
+                            <constraint firstItem="bQ0-Cr-8C6" firstAttribute="trailing" secondItem="1h5-Cv-BwW" secondAttribute="trailing" id="NNW-Yg-tqr"/>
+                            <constraint firstItem="uJu-eK-oqx" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="NiU-AO-eHi"/>
+                            <constraint firstItem="OIj-Nc-14q" firstAttribute="leading" secondItem="5kp-mU-4wI" secondAttribute="trailing" constant="8" id="PKg-db-rDm"/>
+                            <constraint firstItem="bQ0-Cr-8C6" firstAttribute="top" secondItem="uJu-eK-oqx" secondAttribute="bottom" constant="8" symbolic="YES" id="PTf-jO-k7f"/>
+                            <constraint firstItem="1h5-Cv-BwW" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="PtK-Cm-8gZ"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="bottom" secondItem="OIj-Nc-14q" secondAttribute="bottom" constant="8" id="SZB-Qm-r6N"/>
+                            <constraint firstItem="e1r-yu-J5K" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="WXQ-SV-EdI"/>
+                            <constraint firstItem="5kp-mU-4wI" firstAttribute="leading" secondItem="e1u-4f-oat" secondAttribute="leading" constant="8" id="Xze-qg-DUf"/>
+                            <constraint firstItem="uJu-eK-oqx" firstAttribute="top" secondItem="6fQ-BP-k4j" secondAttribute="bottom" constant="8" id="YIb-1D-x5r"/>
+                            <constraint firstItem="e1r-yu-J5K" firstAttribute="top" secondItem="e1u-4f-oat" secondAttribute="top" constant="8" id="ZJz-wJ-0gd"/>
+                            <constraint firstItem="OIj-Nc-14q" firstAttribute="leading" secondItem="5kp-mU-4wI" secondAttribute="trailing" constant="8" id="a3M-eg-CQQ"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="PIB-KL-E85" secondAttribute="trailing" constant="16" id="bgz-HX-cFs"/>
+                            <constraint firstItem="6fQ-BP-k4j" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="efP-kc-BNu"/>
+                            <constraint firstItem="Do1-1J-iLk" firstAttribute="top" secondItem="1h5-Cv-BwW" secondAttribute="bottom" constant="8" id="f2Z-j6-PhZ"/>
+                            <constraint firstItem="uJu-eK-oqx" firstAttribute="leading" secondItem="e1r-yu-J5K" secondAttribute="trailing" constant="8" id="huS-mP-ynT"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Do1-1J-iLk" secondAttribute="trailing" id="ij8-Q9-Yhn"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="1h5-Cv-BwW" secondAttribute="trailing" constant="8" id="k9o-aU-soH"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="uJu-eK-oqx" secondAttribute="trailing" constant="8" id="kGX-C7-KD3"/>
+                            <constraint firstItem="Do1-1J-iLk" firstAttribute="top" secondItem="1h5-Cv-BwW" secondAttribute="bottom" constant="8" id="p7g-V4-lQs"/>
+                            <constraint firstItem="e1u-4f-oat" firstAttribute="trailing" secondItem="OIj-Nc-14q" secondAttribute="trailing" constant="8" id="scb-fL-hS1"/>
+                            <constraint firstItem="6fQ-BP-k4j" firstAttribute="top" secondItem="e1u-4f-oat" secondAttribute="top" constant="8" id="tgJ-r2-P4d"/>
+                            <constraint firstItem="uJu-eK-oqx" firstAttribute="top" secondItem="6fQ-BP-k4j" secondAttribute="bottom" constant="8" id="xX9-mr-DLi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Товар" id="OrW-KI-caY"/>
+                    <connections>
+                        <outlet property="category" destination="uJu-eK-oqx" id="dss-VE-tQG"/>
+                        <outlet property="description" destination="bQ0-Cr-8C6" id="YBZ-y3-h7i"/>
+                        <outlet property="name" destination="6fQ-BP-k4j" id="naG-I9-YNs"/>
+                        <outlet property="quantity" destination="Do1-1J-iLk" id="UeF-Ld-wdk"/>
+                        <outlet property="supplier" destination="1h5-Cv-BwW" id="nko-Af-0Yi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fx-cT-72l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5309.6000000000004" y="-249.62518740629687"/>
         </scene>
         <!--User-->
         <scene sceneID="JDS-Y8-MrR">
@@ -794,7 +927,13 @@
                             <outlet property="delegate" destination="mFo-zD-Z72" id="CYn-HC-5nd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Все пользователи" id="zpF-lk-HwZ"/>
+                    <navigationItem key="navigationItem" title="Все пользователи" id="zpF-lk-HwZ">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="3UN-de-2qH">
+                            <connections>
+                                <segue destination="AOK-NV-aN7" kind="show" id="25g-wq-WZX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="ci6-yK-SbN" id="dgv-ZN-mmr"/>
                         <segue destination="ysa-2a-wc9" kind="show" identifier="editUser" id="tgI-mV-LmP"/>
@@ -1059,6 +1198,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="25g-wq-WZX"/>
         <segue reference="XI7-eG-xkI"/>
         <segue reference="m5K-3G-iHl"/>
     </inferredMetricsTieBreakers>
@@ -1066,7 +1206,15 @@
         <image name="GBSMS" width="3000" height="3000"/>
         <image name="barcode" catalog="system" width="128" height="93"/>
         <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
