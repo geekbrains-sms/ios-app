@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let login = loginInput.text!
         let password = passwordInput.text!
         let parameters: [String: String] = ["password": password, "username": login]
-        AF.request("http://192.168.1.72:8189/api/v1/auth", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default).responseData { response in
+        AF.request("http://192.168.1.73:8189/api/v1/auth", method: .post, parameters: parameters, encoder: JSONParameterEncoder.default).responseData { response in
             guard let data = response.value else { return }
             struct LoginResponse: Codable {var token: String}
             do {

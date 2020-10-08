@@ -15,6 +15,9 @@
 		750BB36A24EC1BBF0088E21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */; };
 		75208103252E480200C4462E /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75208102252E480200C4462E /* CategoryController.swift */; };
 		75C4852A24ED730E00A3B8FE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4852924ED730E00A3B8FE /* Session.swift */; };
+		75CF57C0252F198100DE6D6F /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF57BF252F198100DE6D6F /* ProductController.swift */; };
+		75CF57C4252F366300DE6D6F /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF57C3252F366300DE6D6F /* ProductViewController.swift */; };
+		75CF57C7252F518900DE6D6F /* ContractorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF57C6252F518900DE6D6F /* ContractorController.swift */; };
 		75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DAE80924F1926A00237610 /* MainViewController.swift */; };
 		75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF4A8F24F433A50030B889 /* UserEditor.swift */; };
 		75E11FDE252DE4BE004DD908 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E11FDD252DE4BE004DD908 /* RegisterViewController.swift */; };
@@ -35,6 +38,9 @@
 		75BC9E7924F2EE3B00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75BC9E7A24F2EE3D00EBB7C9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C4852924ED730E00A3B8FE /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		75CF57BF252F198100DE6D6F /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		75CF57C3252F366300DE6D6F /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		75CF57C6252F518900DE6D6F /* ContractorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractorController.swift; sourceTree = "<group>"; };
 		75DAE80924F1926A00237610 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		75DF4A8F24F433A50030B889 /* UserEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditor.swift; sourceTree = "<group>"; };
 		75E11FDD252DE4BE004DD908 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "/Users/ernokanst/Desktop/Swift/ios-app/GeekBrains SMS/GeekBrains SMS/RegisterViewController.swift"; sourceTree = "<absolute>"; };
@@ -83,6 +89,9 @@
 				750BB35F24EC1BB00088E21C /* SceneDelegate.swift */,
 				750BB36124EC1BB00088E21C /* LoginViewController.swift */,
 				75208102252E480200C4462E /* CategoryController.swift */,
+				75CF57BF252F198100DE6D6F /* ProductController.swift */,
+				75CF57C3252F366300DE6D6F /* ProductViewController.swift */,
+				75CF57C6252F518900DE6D6F /* ContractorController.swift */,
 				750BB36324EC1BB00088E21C /* Main.storyboard */,
 				750BB36624EC1BBF0088E21C /* Assets.xcassets */,
 				750BB36824EC1BBF0088E21C /* LaunchScreen.storyboard */,
@@ -225,12 +234,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				75C4852A24ED730E00A3B8FE /* Session.swift in Sources */,
+				75CF57C0252F198100DE6D6F /* ProductController.swift in Sources */,
 				75DF4A9024F433A50030B889 /* UserEditor.swift in Sources */,
+				75CF57C7252F518900DE6D6F /* ContractorController.swift in Sources */,
 				75E11FDE252DE4BE004DD908 /* RegisterViewController.swift in Sources */,
 				750BB36224EC1BB00088E21C /* LoginViewController.swift in Sources */,
 				75DAE80A24F1926A00237610 /* MainViewController.swift in Sources */,
 				75208103252E480200C4462E /* CategoryController.swift in Sources */,
 				750BB35E24EC1BB00088E21C /* AppDelegate.swift in Sources */,
+				75CF57C4252F366300DE6D6F /* ProductViewController.swift in Sources */,
 				750BB36024EC1BB00088E21C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

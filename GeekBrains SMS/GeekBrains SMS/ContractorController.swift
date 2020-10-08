@@ -1,66 +1,18 @@
 //
-//  CategoryController.swift
+//  ContractorController.swift
 //  GeekBrains SMS
 //
-//  Created by Дмитрий Канский on 07.10.2020.
+//  Created by Дмитрий Канский on 08.10.2020.
 //  Copyright © 2020 ernokanst. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 
-class CategoryController: UITableViewController {
+class ContractorController: UITableViewController {
     let session = Session.instance
-    var data: [String] = []
-    struct CatResp: Codable {
-        var id: Int
-        var title: String
-    }
-    struct UnitResp: Codable {
-        var id: Int
-        var title: String
-        var description: String
-    }
-    struct ProductResponse: Codable {
-        var id: Int
-        var title: String
-        var categories: [CatResp]
-        var unit: UnitResp
-        var image: String?
-        var description: String?
-    }
-    struct FundResponse: Codable {
-        var id: Int
-        var product: ProductResponse
-        var balance: Double
-    }
-    
-    func GetProducts() {
-        let session = Session.instance
-        let headers: HTTPHeaders = [.authorization(bearerToken: session.token)]
-        AF.request("http://46.17.104.250:8189/api/v1/funds", method: .get, headers: headers).responseData { response in
-            guard let data = response.value else { return }
-            print(response)
-            print(data)
-            do {
-                let decoded = try JSONDecoder().decode([FundResponse].self, from: data)
-                print(decoded)
-                session.products = decoded
-            } catch {
-                print(error)
-                let alert = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
-            }
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        data.append("Все товары")
-        for c in session.categoryList { data.append(c) }
-        GetProducts()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -78,21 +30,26 @@ class CategoryController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        return session.contractorList.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "contractorCell", for: indexPath)
 
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = session.contractorList[indexPath.row]
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        session.temp = data[indexPath.row]
-        //performSegue(withIdentifier: "selectCategory", sender: nil)
-        }
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

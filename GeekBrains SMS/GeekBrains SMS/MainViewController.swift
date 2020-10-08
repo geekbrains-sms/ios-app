@@ -69,6 +69,34 @@ class MainViewController: UITabBarController {
             }
         }
     }
+    
+    func GetContractors() {
+        let session = Session.instance
+        let headers: HTTPHeaders = [.authorization(bearerToken: session.token)]
+        AF.request("http://46.17.104.250:8189/api/v1/contractors", method: .get, headers: headers).responseData { response in
+            guard let data = response.value else { return }
+            struct ContractorResponse: Codable {
+                var id: Int
+                var title: String
+            }
+            do {
+                let decoded = try JSONDecoder().decode([ContractorResponse].self, from: data)
+                print(decoded)
+                session.contractorList = []
+                session.contractorID = [:]
+                for c in decoded {
+                    session.contractorList.append(c.title)
+                    session.contractorID[c.title] = c.id
+                }
+            } catch {
+                print(error)
+                let alert = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +104,7 @@ class MainViewController: UITabBarController {
         self.navigationItem.title = session.login
         GetUsers()
         GetCategories()
+        GetContractors()
         // Do any additional setup after loading the view.
     }
     

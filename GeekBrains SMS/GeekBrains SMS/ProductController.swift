@@ -1,66 +1,33 @@
 //
-//  CategoryController.swift
+//  ProductController.swift
 //  GeekBrains SMS
 //
-//  Created by Дмитрий Канский on 07.10.2020.
+//  Created by Дмитрий Канский on 24.08.2020.
 //  Copyright © 2020 ernokanst. All rights reserved.
 //
 
 import UIKit
-import Alamofire
 
-class CategoryController: UITableViewController {
+class ProductController: UITableViewController, UISearchBarDelegate {
     let session = Session.instance
+    @IBOutlet var searchBar: UISearchBar!
+    var searchActive = false
     var data: [String] = []
-    struct CatResp: Codable {
-        var id: Int
-        var title: String
-    }
-    struct UnitResp: Codable {
-        var id: Int
-        var title: String
-        var description: String
-    }
-    struct ProductResponse: Codable {
-        var id: Int
-        var title: String
-        var categories: [CatResp]
-        var unit: UnitResp
-        var image: String?
-        var description: String?
-    }
-    struct FundResponse: Codable {
-        var id: Int
-        var product: ProductResponse
-        var balance: Double
-    }
+    var filteredData: [String] = []
     
-    func GetProducts() {
-        let session = Session.instance
-        let headers: HTTPHeaders = [.authorization(bearerToken: session.token)]
-        AF.request("http://46.17.104.250:8189/api/v1/funds", method: .get, headers: headers).responseData { response in
-            guard let data = response.value else { return }
-            print(response)
-            print(data)
-            do {
-                let decoded = try JSONDecoder().decode([FundResponse].self, from: data)
-                print(decoded)
-                session.products = decoded
-            } catch {
-                print(error)
-                let alert = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
-            }
-        }
-    }
-
     override func viewDidLoad() {
+        self.navigationItem.title = session.temp
         super.viewDidLoad()
-        data.append("Все товары")
-        for c in session.categoryList { data.append(c) }
-        GetProducts()
+        searchBar.delegate = self
+        if session.temp == "Все товары"{
+        for l in session.products {
+            data.append(l.product.title)
+            filteredData.append(l.product.title)
+        }} else {
+            for l in session.products {
+                if l.product.categories[0].title == session.temp{
+                data.append(l.product.title)
+                    filteredData.append(l.product.title)}}}
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -78,21 +45,44 @@ class CategoryController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.count
+        return filteredData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
 
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = filteredData[indexPath.row]
+        for l in session.products { if l.product.title==cell.textLabel?.text {
+            cell.detailTextLabel?.text = String(l.balance) + " " + l.product.unit.title
+        }}
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        session.temp = data[indexPath.row]
-        //performSegue(withIdentifier: "selectCategory", sender: nil)
+        session.temp = filteredData[indexPath.row]
+        //performSegue(withIdentifier: "editUser", sender: nil)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = searchText.isEmpty ? data : data.filter { (item: String) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
         }
+        
+        tableView.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.showsCancelButton = false
+            searchBar.text = ""
+            searchBar.resignFirstResponder()
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -110,7 +100,7 @@ class CategoryController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

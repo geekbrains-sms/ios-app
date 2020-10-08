@@ -23,4 +23,7 @@ class Session {
     var categoryID: [String : Int] = [:]
     var temp = ""
     var token = ""
+    var products: [CategoryController.FundResponse] = []
+    var contractorList: [String] = []
+    var contractorID: [String : Int] = [:]
 }
