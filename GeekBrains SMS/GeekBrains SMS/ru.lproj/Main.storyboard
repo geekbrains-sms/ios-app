@@ -218,30 +218,8 @@
                                     <segue destination="mFo-zD-Z72" kind="show" id="DXa-hJ-fUf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-iR-f8X">
-                                <rect key="frame" x="83" y="134" width="209" height="32.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="N3W-iR-f8X" secondAttribute="height" multiplier="115:18" id="OQw-qm-fgK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="➕ Создать пользователя"/>
-                                <connections>
-                                    <segue destination="AOK-NV-aN7" kind="show" id="XPE-KT-juX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-oE-5uo">
-                                <rect key="frame" x="65" y="174.5" width="245" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="cGo-oE-5uo" secondAttribute="height" multiplier="23:3" id="CXN-dw-qMd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="🗑 Удалить пользователя"/>
-                                <connections>
-                                    <segue destination="gx0-z9-7n5" kind="show" id="ehH-SB-yf6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="jou-RK-nQ7">
-                                <rect key="frame" x="26.5" y="214.5" width="322" height="32"/>
+                                <rect key="frame" x="26.5" y="134" width="322" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jou-RK-nQ7" secondAttribute="height" multiplier="181:18" id="oSD-PD-rof"/>
                                 </constraints>
@@ -255,14 +233,10 @@
                         <viewLayoutGuide key="safeArea" id="ViE-d7-rso"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="N3W-iR-f8X" firstAttribute="centerX" secondItem="TNR-gh-phB" secondAttribute="centerX" id="332-U4-HQB"/>
+                            <constraint firstItem="jou-RK-nQ7" firstAttribute="top" secondItem="eEk-fC-9Vp" secondAttribute="bottom" constant="8" id="3i0-lD-rdS"/>
                             <constraint firstItem="jou-RK-nQ7" firstAttribute="centerX" secondItem="TNR-gh-phB" secondAttribute="centerX" id="TfL-39-tzt"/>
-                            <constraint firstItem="cGo-oE-5uo" firstAttribute="centerX" secondItem="TNR-gh-phB" secondAttribute="centerX" id="XpA-38-cn6"/>
-                            <constraint firstItem="N3W-iR-f8X" firstAttribute="top" secondItem="eEk-fC-9Vp" secondAttribute="bottom" constant="8" id="ZmO-cy-khV"/>
                             <constraint firstItem="eEk-fC-9Vp" firstAttribute="top" secondItem="ViE-d7-rso" secondAttribute="top" constant="50" id="aaf-fp-WA5"/>
-                            <constraint firstItem="jou-RK-nQ7" firstAttribute="top" secondItem="cGo-oE-5uo" secondAttribute="bottom" constant="8" id="qcN-iC-cIP"/>
                             <constraint firstItem="eEk-fC-9Vp" firstAttribute="centerX" secondItem="TNR-gh-phB" secondAttribute="centerX" id="uhD-eV-tXS"/>
-                            <constraint firstItem="cGo-oE-5uo" firstAttribute="top" secondItem="N3W-iR-f8X" secondAttribute="bottom" constant="8" id="xLF-Ab-ZlE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Пользователи" image="person.3.fill" catalog="system" landscapeImage="person.3.fill" largeContentSizeImage="person.3.fill" id="1vo-Ek-OAT"/>
@@ -303,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="4409" y="2067"/>
         </scene>
-        <!--Поставщики-->
+        <!--Контрагенты-->
         <scene sceneID="sRZ-DI-n0V">
             <objects>
                 <viewController id="szw-0C-2gZ" sceneMemberID="viewController">
@@ -311,32 +285,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuE-GG-ed7">
-                                <rect key="frame" x="13.5" y="179" width="348" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="VuE-GG-ed7" secondAttribute="height" multiplier="181:18" id="bzZ-lF-JQw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="🗑 Удалить поставщика"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADy-qj-dLK">
-                                <rect key="frame" x="30" y="136.5" width="315" height="34.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ADy-qj-dLK" secondAttribute="height" multiplier="82:9" id="f2r-Ff-o5w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="➕ Создать поставщика"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBR-8t-3jx">
-                                <rect key="frame" x="77" y="94" width="221" height="34.5"/>
+                                <rect key="frame" x="76" y="94" width="223" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sBR-8t-3jx" secondAttribute="height" multiplier="115:18" id="L6H-cf-1UQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="📝 Просмотр поставщиков"/>
+                                <state key="normal" title="📝 Просмотр контрагентов"/>
+                                <connections>
+                                    <segue destination="hgL-Tl-UeC" kind="show" id="svY-8t-bBp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bm-iP-Amf">
-                                <rect key="frame" x="55" y="222" width="265" height="34.5"/>
+                                <rect key="frame" x="53.5" y="137" width="268" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6bm-iP-Amf" secondAttribute="height" multiplier="23:3" id="lZW-ev-3Pe"/>
                                 </constraints>
@@ -349,26 +310,58 @@
                         <constraints>
                             <constraint firstItem="sBR-8t-3jx" firstAttribute="width" secondItem="sBR-8t-3jx" secondAttribute="height" multiplier="115:18" id="1ma-WE-Wil"/>
                             <constraint firstItem="6bm-iP-Amf" firstAttribute="centerX" secondItem="hz2-Xt-x7W" secondAttribute="centerX" id="5cH-83-Lvu"/>
-                            <constraint firstItem="ADy-qj-dLK" firstAttribute="width" secondItem="ADy-qj-dLK" secondAttribute="height" multiplier="82:9" id="AbK-aF-wkC"/>
-                            <constraint firstItem="ADy-qj-dLK" firstAttribute="height" secondItem="sBR-8t-3jx" secondAttribute="height" id="Bg2-WO-l19"/>
                             <constraint firstItem="6bm-iP-Amf" firstAttribute="width" secondItem="6bm-iP-Amf" secondAttribute="height" multiplier="23:3" id="LCT-4j-QL1"/>
                             <constraint firstItem="sBR-8t-3jx" firstAttribute="top" secondItem="nU1-TW-wj2" secondAttribute="top" constant="50" id="O0p-ir-qC5"/>
-                            <constraint firstItem="6bm-iP-Amf" firstAttribute="top" secondItem="VuE-GG-ed7" secondAttribute="bottom" constant="8" id="O7U-qk-xMm"/>
                             <constraint firstItem="sBR-8t-3jx" firstAttribute="centerX" secondItem="hz2-Xt-x7W" secondAttribute="centerX" id="ehu-p9-IH7"/>
-                            <constraint firstItem="VuE-GG-ed7" firstAttribute="centerX" secondItem="hz2-Xt-x7W" secondAttribute="centerX" id="hb4-H0-MgG"/>
                             <constraint firstItem="6bm-iP-Amf" firstAttribute="height" secondItem="sBR-8t-3jx" secondAttribute="height" id="ihd-5p-ApS"/>
-                            <constraint firstItem="ADy-qj-dLK" firstAttribute="top" secondItem="sBR-8t-3jx" secondAttribute="bottom" constant="8" id="jCu-rT-jur"/>
-                            <constraint firstItem="ADy-qj-dLK" firstAttribute="centerX" secondItem="hz2-Xt-x7W" secondAttribute="centerX" id="okO-hk-kBT"/>
-                            <constraint firstItem="VuE-GG-ed7" firstAttribute="height" secondItem="sBR-8t-3jx" secondAttribute="height" id="uMh-oC-fCL"/>
-                            <constraint firstItem="VuE-GG-ed7" firstAttribute="top" secondItem="ADy-qj-dLK" secondAttribute="bottom" constant="8" id="vh6-t4-agL"/>
-                            <constraint firstItem="VuE-GG-ed7" firstAttribute="width" secondItem="VuE-GG-ed7" secondAttribute="height" multiplier="181:18" id="ybL-h2-laR"/>
+                            <constraint firstItem="6bm-iP-Amf" firstAttribute="top" secondItem="sBR-8t-3jx" secondAttribute="bottom" constant="8" id="xgt-vh-fZG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Поставщики" image="cart.fill.badge.plus" catalog="system" landscapeImage="cart.fill.badge.plus" largeContentSizeImage="cart.fill.badge.plus" id="ghw-Ik-qbq"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Контрагенты" image="cart.fill.badge.plus" catalog="system" landscapeImage="cart.fill.badge.plus" largeContentSizeImage="cart.fill.badge.plus" id="ghw-Ik-qbq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMH-b4-CGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2481" y="469"/>
+        </scene>
+        <!--Контрагенты-->
+        <scene sceneID="fpk-yY-kng">
+            <objects>
+                <tableViewController id="hgL-Tl-UeC" customClass="ContractorController" customModule="GB_SMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="r0q-io-mJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contractorCell" textLabel="SwF-49-EK3" style="IBUITableViewCellStyleDefault" id="3O0-sg-lHp">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3O0-sg-lHp" id="iux-io-C9z">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SwF-49-EK3">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hgL-Tl-UeC" id="Ie1-y4-fAH"/>
+                            <outlet property="delegate" destination="hgL-Tl-UeC" id="ulE-LD-KFO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Контрагенты" id="kPN-01-rv9">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="plus" catalog="system" id="RjZ-l2-dAD"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIa-Pc-wCD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="487"/>
         </scene>
         <!--User-->
         <scene sceneID="BFy-hw-Rgt">
@@ -1198,8 +1191,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="25g-wq-WZX"/>
-        <segue reference="XI7-eG-xkI"/>
+        <segue reference="5dt-PQ-PRN"/>
         <segue reference="m5K-3G-iHl"/>
     </inferredMetricsTieBreakers>
     <resources>
