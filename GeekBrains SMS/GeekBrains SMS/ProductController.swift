@@ -2,16 +2,32 @@
 //  ProductController.swift
 //  GeekBrains SMS
 //
-//  Created by Дмитрий Канский on 08.10.2020.
+//  Created by Дмитрий Канский on 24.08.2020.
 //  Copyright © 2020 ernokanst. All rights reserved.
 //
 
 import UIKit
 
-class ProductController: UITableViewController {
-
+class ProductController: UITableViewController, UISearchBarDelegate {
+    let session = Session.instance
+    @IBOutlet var searchBar: UISearchBar!
+    var searchActive = false
+    var data: [String] = []
+    var filteredData: [String] = []
+    
     override func viewDidLoad() {
+        self.navigationItem.title = session.temp
         super.viewDidLoad()
+        searchBar.delegate = self
+        if session.temp == "Все товары"{
+        for l in session.products {
+            data.append(l.product.title+"☢︎"+String(l.product.id))
+            filteredData.append(l.product.title+"☢︎"+String(l.product.id))
+        }} else {
+            for l in session.products {
+                if l.product.categories[0].title == session.temp{
+                data.append(l.product.title+"☢︎"+String(l.product.id))
+                    filteredData.append(l.product.title+"☢︎"+String(l.product.id))}}}
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,18 +45,44 @@ class ProductController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return filteredData.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "productCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = filteredData[indexPath.row].components(separatedBy: "☢︎")[0]
+        for l in session.products { if l.product.title==cell.textLabel?.text {
+            cell.detailTextLabel?.text = String(l.balance) + " " + l.product.unit.title
+        }}
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        session.temp = (filteredData[indexPath.row].components(separatedBy: "☢︎")[1])
+        //performSegue(withIdentifier: "editUser", sender: nil)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredData = searchText.isEmpty ? data : data.filter { (item: String) -> Bool in
+            // If dataItem matches the searchText, return true to include it
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        
+        tableView.reloadData()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+            self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.showsCancelButton = false
+            searchBar.text = ""
+            searchBar.resignFirstResponder()
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -58,7 +100,7 @@ class ProductController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

@@ -7,15 +7,60 @@
 //
 
 import UIKit
+import Alamofire
 
 class CategoryController: UITableViewController {
     let session = Session.instance
     var data: [String] = []
+    struct CatResp: Codable {
+        var id: Int
+        var title: String
+    }
+    struct UnitResp: Codable {
+        var id: Int
+        var title: String
+        var description: String
+    }
+    struct ProductResponse: Codable {
+        var id: Int
+        var title: String
+        var categories: [CatResp]
+        var unit: UnitResp
+        var image: String?
+        var description: String?
+    }
+    struct FundResponse: Codable {
+        var id: Int
+        var product: ProductResponse
+        var balance: Double
+    }
+    
+    func GetProducts() {
+        let session = Session.instance
+        let headers: HTTPHeaders = [.authorization(bearerToken: session.token)]
+        AF.request("http://46.17.104.250:8189/api/v1/funds", method: .get, headers: headers).responseData { response in
+            guard let data = response.value else { return }
+            print(response)
+            print(data)
+            do {
+                let decoded = try JSONDecoder().decode([FundResponse].self, from: data)
+                print(decoded)
+                session.products = decoded
+            } catch {
+                print(error)
+                let alert = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         data.append("Все товары")
         for c in session.categoryList { data.append(c) }
+        GetProducts()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,6 +88,11 @@ class CategoryController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        session.temp = data[indexPath.row]
+        //performSegue(withIdentifier: "selectCategory", sender: nil)
+        }
 
     /*
     // Override to support conditional editing of the table view.

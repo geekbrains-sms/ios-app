@@ -456,7 +456,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="vmY-hw-gTL" kind="show" id="FXU-5u-W1M"/>
+                                    <segue destination="vmY-hw-gTL" kind="show" identifier="selectCategory" id="FXU-5u-W1M"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -521,6 +521,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Товары" id="uLI-Im-LRE"/>
+                    <connections>
+                        <outlet property="searchBar" destination="7DX-87-aKC" id="bcd-Ja-N9M"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5II-b2-flD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
